@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:bnonni.github.io:didpkg-demo",
+  "verificationMethod": [
+    {
+      "id": "did:web:bnonni.github.io:didpkg-demo#didpkg-1",
+      "type": "JsonWebKey",
+      "controller": "did:web:bnonni.github.io:didpkg-demo",
+      "publicKeyJwk": {
+        "crv": "Ed25519",
+        "kty": "OKP",
+        "x": "_6OnscLA3buiA5OUTCFNKvEjMF5EgincCvQW6bFgCEo",
+        "kid": "P2t-9dNOituh0Gi9b5p5nWqV4JSfdbx6FaCimIGqYiY",
+        "alg": "EdDSA"
+      }
+    }
+  ],
+  "assertionMethod": [
+    "did:web:bnonni.github.io:didpkg-demo#didpkg-1"
+  ],
+  "service": [
+    {
+      "id": "did:web:bnonni.github.io:didpkg-demo#dwn",
+      "type": "DecentralizedWebNode",
+      "serviceEndpoint": [
+        "https://dwn.didpkg.dev"
+      ]
+    },
+    {
+      "id": "did:web:bnonni.github.io:didpkg-demo#pkg",
+      "type": "DIDPackageRepository",
+      "serviceEndpoint": [
+        "https://bnonni.github.io/didpkg-demo/"
+      ]
+    }
+  ]
+}
