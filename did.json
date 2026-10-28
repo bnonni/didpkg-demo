@@ -32,7 +32,7 @@
       "id": "did:web:bnonni.github.io:didpkg-demo#pkg",
       "type": "DIDPackageRepository",
       "serviceEndpoint": [
-        "https://bnonni.github.io/didpkg-demo/"
+        "https://bnonni.github.io/didpkg-demo/web/"
       ]
     }
   ]
